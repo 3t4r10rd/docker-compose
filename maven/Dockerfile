@@ -1,7 +1,7 @@
 FROM  alpine:latest
 RUN apk update 
-RUN apk add git -y 
-RUN apk add maven -y 
+RUN apk add git
+RUN apk add maven
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git &&\
 mkdir volume1
 WORKDIR boxfuse-sample-java-war-hello
