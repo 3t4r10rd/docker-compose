@@ -1,5 +1,5 @@
 FROM  tatsushid/tinycore:latest
-RUN apt-get update && apt-get install git maven -y &&\
+RUN apk update && apk add git maven -y &&\
 git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git &&\
 mkdir volume1
 WORKDIR boxfuse-sample-java-war-hello
