@@ -9,10 +9,10 @@ services:
 #      image: tomcat
       build:
        context: ./tomcat      
-       depends_on:
-        - maven
+      depends_on:
+       - maven
       ports:
-        - "80:8080"
+       - "80:8080"
       volumes:
        - l7:/var/lib/tomcat/webapps/
 
