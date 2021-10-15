@@ -7,7 +7,7 @@ services:
        - l7:/boxfuse-sample-java-war-hello/
 
     tomcat:
-#      image: tomcat
+#     image: tomcat
       build:
        context: ./tomcat      
       depends_on:
