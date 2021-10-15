@@ -6,8 +6,10 @@ services:
       volumes:
        - l7:/volume1
     tomcat:
-      image: tomcat
-      depends_on:
+#      image: tomcat
+      build:
+       context: ./tomcat      
+       depends_on:
         - maven
       ports:
         - "80:8080"
